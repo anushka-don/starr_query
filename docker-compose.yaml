@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    image: starr_query_app
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      DB_HOST: {DB_HOST}
+      DB_USER: {DB_USER}
+      DB_PASS: {DB_PASS}
+      DB_NAME: {DB_NAME}
+      DB_PORT: {DB_PORT}
+
