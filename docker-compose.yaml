@@ -6,9 +6,11 @@ services:
     ports:
       - "8080:80"
     environment:
-      DB_HOST: {DB_HOST}
-      DB_USER: {DB_USER}
-      DB_PASS: {DB_PASS}
-      DB_NAME: {DB_NAME}
-      DB_PORT: {DB_PORT}
+      DB_HOST=sample-db-host
+      DB_USER=sample_user
+      DB_PASS=sample_password
+      DB_NAME=sample_database
+      DB_PORT=3306
+
+
 
